@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ImageViewTouch imageViewTouch = (ImageViewTouch)findViewById(R.id.crimeRoomImage);
 
         imageViewTouch.setDisplayType(ImageViewTouchBase.DisplayType.FIT_TO_SCREEN);
-        imageViewTouch.setImageResource(crime_room);
+        /*imageViewTouch.setImageResource(crime_room);*/
 
 }
 }

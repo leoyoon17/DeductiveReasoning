@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Deductive Reasoning</string>
+    <string name="briefing1">Good evening Agent (ENTER NAME HERE), we have a new case that needs your expertise. At approximately 0400 hours, an assailant broke into the British National Museum to steal the Deerstalker Cap formerly worn by the legendary detective himself, Sherlock Holmes.
+The Bureau managed to round up some potential suspects which may or may not have stolen the Deerstalker. The suspects that we have gathered were the last to be seen near the Holmes Exhibit before the museum closed for the night, but we have no lead on what their true intentions are.
+The museum’s security guard who encountered the assailant claims who that he saw a shadowy figure approach him before disappearing and that’s all he remembers. The museum’s curator found the guard laying unconscious when he came to work. Unfortunately, the security cameras could not give us any more clues other than the fact that it’s vision was impaired by a mysterious red substance.
+</string>
 </resources>

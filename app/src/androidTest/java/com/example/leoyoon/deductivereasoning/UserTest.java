@@ -7,17 +7,33 @@ import junit.framework.TestCase;
  */
 
 public class UserTest extends TestCase {
-    public void testGetUserName() {
-        String userName = "TestUser";
-        User user = new User(userName);
-        assertEquals("TestUser",user.getUserName());
+    public void testGetUserFirstName() {
+        String userFirstName = "TestUser";
+        User user = new User(userFirstName,"");
+        assertEquals("TestUser",user.getUserFirstName());
     }
 
-    public void testSetUserName(){
+    public void testSetUserFirstName(){
         String userName = "TestUser";
-        User user = new User(userName);
+        User user = new User(userName,"");
         String userName2 = "TestUser";
-        user.setUserName(userName2);
-        assertEquals(userName2, user.getUserName());
+        user.setUserFirstName(userName2);
+        assertEquals(userName2, user.getUserFirstName());
     }
+
+    public void testGetUserLastName() {
+        String userLastName = "TestUser";
+        User user = new User("",userLastName);
+        assertEquals("TestUser",user.getUserLastName());
+    }
+
+    public void testSetUserLastName() {
+        String userLastName = "TestUser";
+        User user = new User(userLastName, "");
+        String userLastName2 =  "TestUser2";
+        user.setUserLastName(userLastName2);
+        assertEquals(userLastName2,user.getUserLastName());
+    }
+
+
 }

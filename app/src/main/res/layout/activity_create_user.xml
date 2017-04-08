@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.leoyoon.deductivereasoning.CreateUser">
+
+    <TextView
+        android:text="Agent Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/userTitleView"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="First Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/firstNameView"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/userTitleView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Last Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/userFirstName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Sherlock"
+        android:ems="10"
+        android:id="@+id/userFirstName"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:layout_below="@+id/firstNameView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Holmes"
+        android:ems="10"
+        android:id="@+id/userLastName"
+        android:textSize="19sp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:layout_below="@+id/textView7"
+        android:layout_alignStart="@+id/userFirstName" />
+
+    <Button
+        android:text="Go!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmButton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="CreateUser" />
+
+</RelativeLayout>

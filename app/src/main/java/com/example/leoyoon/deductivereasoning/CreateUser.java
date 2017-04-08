@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -36,12 +37,23 @@ public class CreateUser extends AppCompatActivity {
         String userFirstName = userFirstNameText.getText().toString();
         String userLastName = userLastNameText.getText().toString();
 
-        user.setUserFirstName(userFirstName);
-        user.setUserLastName(userLastName);
-        saveInFile();
-        Intent intent = new Intent(CreateUser.this, Briefing1.class);
-        CreateUser.this.startActivity(intent);
-        finish();
+        if(userFirstName.matches("") || userLastName.matches("")) {
+            Toast.makeText(this, "Please Enter Agent's Name (Both First and Last", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            user.setUserFirstName(userFirstName);
+            user.setUserLastName(userLastName);
+            saveInFile();
+
+            Intent intent = new Intent(CreateUser.this, Briefing1.class);
+
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("user", user);
+            intent.putExtras(bundle);
+
+            CreateUser.this.startActivity(intent);
+            finish();
+        }
 
     }
 

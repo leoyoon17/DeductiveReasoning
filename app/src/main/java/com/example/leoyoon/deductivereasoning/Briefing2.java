@@ -29,6 +29,14 @@ public class Briefing2 extends AppCompatActivity {
     }
 
     public void goBack(View view){
+        Intent intent = new Intent (Briefing2.this, Briefing1.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user", user);
+        intent.putExtras(bundle);
+
+        Briefing2.this.startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }
 

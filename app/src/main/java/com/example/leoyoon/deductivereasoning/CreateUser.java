@@ -38,7 +38,7 @@ public class CreateUser extends AppCompatActivity {
         String userLastName = userLastNameText.getText().toString();
 
         if(userFirstName.matches("") || userLastName.matches("")) {
-            Toast.makeText(this, "Please Enter Agent's Name (Both First and Last", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please Enter Agent's Name (Both First and Last)", Toast.LENGTH_SHORT).show();
         }
         else {
             user.setUserFirstName(userFirstName);
@@ -52,6 +52,7 @@ public class CreateUser extends AppCompatActivity {
             intent.putExtras(bundle);
 
             CreateUser.this.startActivity(intent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             finish();
         }
 

@@ -5,4 +5,18 @@
 The Bureau managed to round up some potential suspects which may or may not have stolen the Deerstalker. The suspects that we have gathered were the last to be seen near the Holmes Exhibit before the museum closed for the night, but we have no lead on what their true intentions are.
 The museum’s security guard who encountered the assailant claims who that he saw a shadowy figure approach him before disappearing and that’s all he remembers. The museum’s curator found the guard laying unconscious when he came to work. Unfortunately, the security cameras could not give us any more clues other than the fact that it’s vision was impaired by a mysterious red substance. Your job is to listen to the suspects’ testimonies and use the clues collected by the team on the field to conclude on who stole the Deerstalker cap. You can always come back and read the briefing as needed by pressing the ‘Briefing’ button.</string>
     <string name="backButton"> Back </string>
+
+    <string name="briefing2_1">As you come to the realization that all of the suspects had something to do in the burglary, you receive a phone call.
+	“Hello, my dear</string>
+    <string name="briefing2_2">)”, spoke the calm, eerie, British voice.
+	You remain bewildered in your seat. Then suddenly, you hear a faint beeping sound.
+	The voice continues, “You may have noticed by now that I had left a little present underneath your chair.”
+	You stand up to check the source of the beeping sound only to be greeted by enough plastic explosives to level all of London.
+	The mysterious caller announces, “You are to enter a code consisting of three positive whole numbers in ascending order. So that the second number is greater than or equal to the first and the third is greater than or equal to the second. But since I’m feeling quite generous today, I will bestow upon you, 3 clues to the passcode.”
+	“The first clue is that the three numbers in the passcode multiply to 36… The second clue is that the sum of the three numbers in the passcode add up to the room number you are in right now. Finally, my last clue is that the largest number in the passcode only appears once.” said the voice.
+	Finally, the mysterious voice suggests that you do not leave the room you are in to check for the room’s number as the bomb will go off. Any attempts to disarm the bomb without the passcode, the bomb will go off. You try to question the villain’s motives but the voice just responds, “You have one chance to enter the correct passcode or London will be returned to dust. Good luck!”
+	The receiver clicks and all you are left with is the dial tone from your phone, the bomb’s heartbeat, and the suffocating atmosphere in the room. Time to crunch some numbers!
+</string>
+    <string name="title_activity_part3_briefing1">Part3Briefing1</string>
+
 </resources>

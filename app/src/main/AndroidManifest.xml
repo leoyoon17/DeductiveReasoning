@@ -26,7 +26,15 @@
         </activity>
         <activity android:name=".Briefing1" />
         <activity android:name=".CreateUser" />
-        <activity android:name=".Briefing2"></activity>
+        <activity android:name=".Briefing2" />
+        <activity android:name=".Clues" />
+        <activity android:name=".Solve" />
+        <activity android:name=".adlerPage" />
+        <activity android:name=".Part2Briefing1" />
+        <activity android:name=".Part2" />
+        <activity android:name=".Part3Briefing1" />
+        <activity android:name=".Part2GameOver" />
+        <activity android:name=".Part2Clues"></activity>
     </application>
 
 </manifest>

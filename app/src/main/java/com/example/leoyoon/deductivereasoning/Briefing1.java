@@ -41,6 +41,8 @@ public class Briefing1 extends AppCompatActivity {
         intent.putExtras(bundle);
 
         Briefing1.this.startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        finish();
     }
 
     public void skipBriefing (View view) {
@@ -52,6 +54,7 @@ public class Briefing1 extends AppCompatActivity {
         intent.putExtras(bundle);
 
         Briefing1.this.startActivity(intent);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }
 }

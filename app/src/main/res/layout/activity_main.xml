@@ -11,13 +11,100 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.leoyoon.deductivereasoning.MainActivity">
 
-    <it.sephiroth.android.library.imagezoom.ImageViewTouch
-        android:id="@+id/crimeRoomImage"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:background="@drawable/crime_room"
-        android:scaleType="fitCenter"
-        android:layout_marginBottom="28dp"
+
+    <Button
+        android:text="Briefing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:id="@+id/briefingButton"
+        android:onClick="toBriefing"/>
+
+    <Button
+        android:text="Clues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/briefingButton"
+        android:layout_toEndOf="@+id/briefingButton"
+        android:id="@+id/cluesButton"
+        android:onClick="toClues"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cluesButton"
+        android:layout_toEndOf="@+id/cluesButton"
+        android:id="@+id/button3" />
+
+    <Button
+        android:text="Solve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toEndOf="@+id/button3"
+        android:id="@+id/solveButton"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:onClick="toSolve"/>
+
+    <TextView
+        android:text="The Suspects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <ImageButton
+        android:layout_width="35dip"
+        android:layout_height="225dip"
+        android:maxWidth="50dp"
+        android:maxHeight="250dip"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/the_woman"
+        android:onClick="toAdlerPage"
+        android:adjustViewBounds="true"
+        android:id="@+id/adlerButton"
+        android:layout_below="@+id/titleView"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button3" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/the_other2"
+        android:layout_below="@+id/titleView"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/bakshiButton"
+        android:layout_toEndOf="@+id/adlerButton"
+        android:layout_alignBottom="@+id/adlerButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/the_doppleganger2"
+        android:id="@+id/kudoButton"
+        android:layout_below="@+id/adlerButton"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/cluesButton"
+        android:layout_above="@+id/cluesButton" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/the_admirer"
+        android:id="@+id/basilButton"
+        android:layout_above="@+id/briefingButton"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/adlerButton"
+        android:layout_toStartOf="@+id/button3" />
+
 </RelativeLayout>

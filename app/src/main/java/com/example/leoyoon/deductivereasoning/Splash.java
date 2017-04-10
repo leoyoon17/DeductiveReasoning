@@ -28,6 +28,7 @@ public class Splash extends Activity {
                 /* Create an Intent that will start the Menu activity */
                 Intent mainIntent = new Intent(Splash.this,CreateUser.class);
                 Splash.this.startActivity(mainIntent);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 Splash.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);

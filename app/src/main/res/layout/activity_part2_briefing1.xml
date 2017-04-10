@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/nextPageButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/briefing2_1"
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+<Button
+    android:text="Next"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/nextPageButton"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:onClick="nextBriefingPage" />
+</RelativeLayout>

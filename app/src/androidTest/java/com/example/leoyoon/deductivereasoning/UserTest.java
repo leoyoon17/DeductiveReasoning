@@ -1,5 +1,7 @@
 package com.example.leoyoon.deductivereasoning;
 
+import com.example.leoyoon.deductivereasoning.Misc.User;
+
 import junit.framework.TestCase;
 
 /**

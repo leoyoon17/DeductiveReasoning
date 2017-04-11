@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#000"
-    tools:context="com.example.leoyoon.deductivereasoning.Briefing1">
+    tools:context="com.example.leoyoon.deductivereasoning.Part1.Briefing1">
 
     <TextView
         android:text="Briefing"
@@ -56,6 +56,8 @@
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:layout_below="@+id/titleView"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/skipBriefingButton"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

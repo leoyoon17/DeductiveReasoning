@@ -1,7 +1,9 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Part3;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.leoyoon.deductivereasoning.R;
 
 public class Part3Briefing1 extends AppCompatActivity {
 

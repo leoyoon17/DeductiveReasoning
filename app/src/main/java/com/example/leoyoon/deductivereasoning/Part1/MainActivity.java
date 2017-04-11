@@ -1,15 +1,12 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Part1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import it.sephiroth.android.library.imagezoom.ImageViewTouch;
-import it.sephiroth.android.library.imagezoom.ImageViewTouchBase;
-
-import static com.example.leoyoon.deductivereasoning.R.drawable.crime_room;
-import static com.example.leoyoon.deductivereasoning.R.id.image;
+import com.example.leoyoon.deductivereasoning.R;
+import com.example.leoyoon.deductivereasoning.Misc.User;
 
 public class MainActivity extends AppCompatActivity {
     private User user;
@@ -43,18 +40,19 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(bundle);
 
         MainActivity.this.startActivity(intent);
-        finish();
+
     }
 
     public void toSolve (View view) {
-        Intent intent = new Intent (MainActivity.this, Solve.class);
+        Intent intent = new Intent (MainActivity.this, preSolveScreen.class);
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("user",user);
         intent.putExtras(bundle);
 
         MainActivity.this.startActivity(intent);
-        finish();
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+
     }
 
     public void toAdlerPage (View view) {
@@ -65,6 +63,39 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(bundle);
 
         MainActivity.this.startActivity(intent);
-        finish();
+
+    }
+
+    public void toBakshiPage (View view) {
+        Intent intent = new Intent (MainActivity.this, bakshiPage.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",user);
+        intent.putExtras(bundle);
+
+        MainActivity.this.startActivity(intent);
+
+    }
+
+    public void toBasilPage (View view) {
+        Intent intent = new Intent (MainActivity.this, basilPage.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",user);
+        intent.putExtras(bundle);
+
+        MainActivity.this.startActivity(intent);
+
+    }
+
+    public void toKudoPage (View view) {
+        Intent intent = new Intent (MainActivity.this, kudoPage.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user",user);
+        intent.putExtras(bundle);
+
+        MainActivity.this.startActivity(intent);
+
     }
 }

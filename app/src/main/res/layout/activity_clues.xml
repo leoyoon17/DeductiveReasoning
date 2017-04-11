@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_clues"
     android:layout_width="match_parent"
@@ -8,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.leoyoon.deductivereasoning.Clues">
+    tools:context="com.example.leoyoon.deductivereasoning.Part1.Clues">
 
     <TextView
         android:text="Clues"
@@ -20,4 +21,32 @@
         android:fontFamily="monospace"
         android:textSize="25sp"
         android:textStyle="normal|bold" />
+
+    <Button
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/backButton"
+        android:onClick="back"/>
+
+    <Button
+        android:text="View Cryptograph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toCryptoGraphButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="toCryptograph"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dancing_men"
+        android:id="@+id/imageView2"
+        android:layout_marginTop="101dp"
+        android:layout_below="@+id/cluesTitleView"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

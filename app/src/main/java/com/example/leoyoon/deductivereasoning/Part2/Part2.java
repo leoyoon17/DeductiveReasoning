@@ -1,4 +1,4 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Part2;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -6,12 +6,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.example.leoyoon.deductivereasoning.Misc.User;
+import com.example.leoyoon.deductivereasoning.Part3.Part3Briefing1;
+import com.example.leoyoon.deductivereasoning.R;
 
 public class Part2 extends AppCompatActivity {
 
     private User user;
-    private EditText editText = (EditText)findViewById(R.id.editText);
 
     /* For Wait */
     private Handler mHandler = new Handler();
@@ -27,15 +29,16 @@ public class Part2 extends AppCompatActivity {
     }
 
     public void clear (View view) {
-        editText.setText("");
+        EditText bombEditText = (EditText)findViewById(R.id.bombEditText);
+        bombEditText.setText("");
     }
 
     public void check (View view) {
-
-        String code = editText.getText().toString();
+        EditText bombEditText = (EditText)findViewById(R.id.bombEditText);
+        String code = bombEditText.getText().toString();
         /* If the number in editText == 229 then continue */
         if (code.matches("229")) {
-            editText.setText("Defused.");
+            bombEditText.setText("Defused.");
             mHandler.postDelayed(new Runnable() {
                 public void run() {
                     Intent intent = new Intent(Part2.this, Part3Briefing1.class);
@@ -54,7 +57,7 @@ public class Part2 extends AppCompatActivity {
         }
         /* If the number in editText != 229 then game over */
         else {
-            editText.setText("Goodbye.");
+            bombEditText.setText("Goodbye.");
             mHandler.postDelayed(new Runnable() {
                 public void run() {
                     Intent intent = new Intent(Part2.this, Part2GameOver.class);
@@ -81,6 +84,5 @@ public class Part2 extends AppCompatActivity {
 
         Part2.this.startActivity(intent);
 
-        finish();
     }
 }

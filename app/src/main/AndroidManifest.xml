@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Part1.MainActivity" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -17,24 +17,29 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Splash">
+        <activity android:name=".Misc.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Briefing1" />
-        <activity android:name=".CreateUser" />
-        <activity android:name=".Briefing2" />
-        <activity android:name=".Clues" />
-        <activity android:name=".Solve" />
-        <activity android:name=".adlerPage" />
-        <activity android:name=".Part2Briefing1" />
-        <activity android:name=".Part2" />
-        <activity android:name=".Part3Briefing1" />
-        <activity android:name=".Part2GameOver" />
-        <activity android:name=".Part2Clues"></activity>
+        <activity android:name=".Part1.Briefing1" />
+        <activity android:name=".Misc.CreateUser" />
+        <activity android:name=".Part1.Briefing2" />
+        <activity android:name=".Part1.Clues" />
+        <activity android:name=".Part1.Solve" />
+        <activity android:name=".Part1.adlerPage" />
+        <activity android:name=".Part2.Part2Briefing1" />
+        <activity android:name=".Part2.Part2" />
+        <activity android:name=".Part3.Part3Briefing1" />
+        <activity android:name=".Part2.Part2GameOver" />
+        <activity android:name=".Part2.Part2Clues" />
+        <activity android:name=".Part1.bakshiPage" />
+        <activity android:name=".Part1.basilPage" />
+        <activity android:name=".Part1.kudoPage" />
+        <activity android:name=".Part1.Cryptograph" />
+        <activity android:name=".Part1.preSolveScreen"></activity>
     </application>
 
 </manifest>

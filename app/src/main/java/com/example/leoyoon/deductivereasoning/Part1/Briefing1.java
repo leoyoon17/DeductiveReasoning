@@ -1,4 +1,4 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Part1;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,7 +7,8 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
-import static com.example.leoyoon.deductivereasoning.R.string.briefing1;
+import com.example.leoyoon.deductivereasoning.R;
+import com.example.leoyoon.deductivereasoning.Misc.User;
 
 public class Briefing1 extends AppCompatActivity {
 

@@ -8,7 +8,7 @@ The museum’s security guard who encountered the assailant claims who that he s
 
     <string name="briefing2_1">As you come to the realization that all of the suspects had something to do in the burglary, you receive a phone call.
 	“Hello, my dear</string>
-    <string name="briefing2_2">)”, spoke the calm, eerie, British voice.
+    <string name="briefing2_2">”, spoke the calm, eerie, British voice.
 	You remain bewildered in your seat. Then suddenly, you hear a faint beeping sound.
 	The voice continues, “You may have noticed by now that I had left a little present underneath your chair.”
 	You stand up to check the source of the beeping sound only to be greeted by enough plastic explosives to level all of London.
@@ -17,6 +17,7 @@ The museum’s security guard who encountered the assailant claims who that he s
 	Finally, the mysterious voice suggests that you do not leave the room you are in to check for the room’s number as the bomb will go off. Any attempts to disarm the bomb without the passcode, the bomb will go off. You try to question the villain’s motives but the voice just responds, “You have one chance to enter the correct passcode or London will be returned to dust. Good luck!”
 	The receiver clicks and all you are left with is the dial tone from your phone, the bomb’s heartbeat, and the suffocating atmosphere in the room. Time to crunch some numbers!
 </string>
-    <string name="title_activity_part3_briefing1">Part3Briefing1</string>
+	<string name="pre_solve1"> \tYou take a seat in an empty room to ponder and solve the code… </string>
+
 
 </resources>

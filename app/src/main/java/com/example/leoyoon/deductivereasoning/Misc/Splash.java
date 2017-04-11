@@ -1,10 +1,12 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Misc;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.example.leoyoon.deductivereasoning.R;
 
 public class Splash extends Activity {
 

@@ -1,4 +1,4 @@
-package com.example.leoyoon.deductivereasoning;
+package com.example.leoyoon.deductivereasoning.Misc;
 
 import java.io.Serializable;
 

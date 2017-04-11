@@ -1,13 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_part3_briefing1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.leoyoon.deductivereasoning.Part3.Part3Briefing1">
+    android:background="#000">
 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/nextPageButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="16sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nextPageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="nextBriefingPage" />
 </RelativeLayout>

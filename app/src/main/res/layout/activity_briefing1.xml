@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/briefingView1"
-        android:text="@string/briefing1"
+        android:text="briefing"
         android:textSize="18sp"
         android:fontFamily="monospace"
         android:maxLines="1000"

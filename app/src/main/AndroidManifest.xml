@@ -39,7 +39,11 @@
         <activity android:name=".Part1.basilPage" />
         <activity android:name=".Part1.kudoPage" />
         <activity android:name=".Part1.Cryptograph" />
-        <activity android:name=".Part1.preSolveScreen"></activity>
+        <activity android:name=".Part1.preSolveScreen" />
+        <activity android:name=".Part3.Part3" />
+        <activity android:name=".Part3.Part3Clues" />
+        <activity android:name=".Part3.Part3GameOver" />
+        <activity android:name=".Part4.Part4Briefing1"></activity>
     </application>
 
 </manifest>

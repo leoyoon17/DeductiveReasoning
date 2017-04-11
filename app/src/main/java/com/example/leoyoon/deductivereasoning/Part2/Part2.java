@@ -38,7 +38,7 @@ public class Part2 extends AppCompatActivity {
         String code = bombEditText.getText().toString();
         /* If the number in editText == 229 then continue */
         if (code.matches("229")) {
-            bombEditText.setText("Defused.");
+            bombEditText.setText("...");
             mHandler.postDelayed(new Runnable() {
                 public void run() {
                     Intent intent = new Intent(Part2.this, Part3Briefing1.class);
@@ -57,7 +57,7 @@ public class Part2 extends AppCompatActivity {
         }
         /* If the number in editText != 229 then game over */
         else {
-            bombEditText.setText("Goodbye.");
+            bombEditText.setText("...");
             mHandler.postDelayed(new Runnable() {
                 public void run() {
                     Intent intent = new Intent(Part2.this, Part2GameOver.class);

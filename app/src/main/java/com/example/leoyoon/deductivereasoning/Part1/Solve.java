@@ -25,6 +25,14 @@ public class Solve extends AppCompatActivity {
     }
 
     public void back (View view) {
+
+        Intent intent = new Intent(Solve.this, MainActivity.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("user", user);
+        intent.putExtras(bundle);
+
+        Solve.this.startActivity(intent);
         finish();
     }
 

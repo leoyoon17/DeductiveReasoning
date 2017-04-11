@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_part3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#EAEAEA"
+    tools:context="com.example.leoyoon.deductivereasoning.Part3.Part3">
+
+    <Button
+        android:text="Check House"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/clueButton"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/solveButton"
+        android:layout_toEndOf="@+id/clueButton"
+        android:onClick="Solve"/>
+
+    <Button
+        android:text="briefing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/briefingButton"
+        android:onClick="toBriefing"/>
+
+    <Button
+        android:text="Clues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clueButton"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/briefingButton"
+        android:onClick="toClues"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/houses"
+        android:layout_marginTop="59dp"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Which house to choose..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/titleView"
+        android:textSize="23sp"
+        android:fontFamily="monospace" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="78dp"
+        >
+        <RadioButton android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="10dp"
+            />
+        <RadioButton android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="38dp"/>
+        <RadioButton android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="40dp"/>
+        <RadioButton android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="40dp"/>
+        <RadioButton android:id="@+id/rb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginStart="40dp"/>
+    </RadioGroup>
+</RelativeLayout>

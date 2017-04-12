@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_part4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000"
+    tools:context="com.example.leoyoon.deductivereasoning.Part4.Part4">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/door"
+        android:id="@+id/imageView5"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="clr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/clearButton"
+        android:minHeight="88dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/checkButton"
+        android:textSize="25sp"
+        android:onClick="clear"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@color/common_google_signin_btn_text_dark_focused"
+        android:id="@+id/imageView6"
+        android:maxHeight="40dp"
+        android:minHeight="40dp"
+        android:maxWidth="40dp"
+        android:minWidth="40dp"
+        android:layout_alignEnd="@+id/button9"
+        android:layout_alignStart="@+id/button6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="sixPressed"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button9" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:minWidth="58dp"
+        android:minHeight="58dp"
+        android:onClick="threePressed"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="fourPressed"
+        android:layout_below="@+id/button1"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="onePressed"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignStart="@+id/checkButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkButton"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="check"
+        android:layout_alignBaseline="@+id/button0"
+        android:layout_alignBottom="@+id/button0"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:minWidth="58dp"
+        android:minHeight="58dp"
+        android:onClick="twoPressed"
+        android:layout_alignBaseline="@+id/button3"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignStart="@+id/button5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="fivePressed"
+        android:layout_below="@+id/button2"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="sevenPressed"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/button4"
+        android:layout_toStartOf="@+id/button8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button8"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:onClick="eightPressed"
+        android:layout_below="@+id/button5"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button9"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:layout_below="@+id/button6"
+        android:layout_toEndOf="@+id/clearButton"
+        android:onClick="ninePressed"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button0"
+        android:minWidth="58dp"
+        android:minHeight="58dip"
+        android:layout_below="@+id/button8"
+        android:layout_toEndOf="@+id/button7"
+        android:layout_marginTop="14dp"
+        android:onClick="zeroPressed"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="normal|bold"
+        android:maxLength="4"
+        android:layout_below="@+id/button0"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

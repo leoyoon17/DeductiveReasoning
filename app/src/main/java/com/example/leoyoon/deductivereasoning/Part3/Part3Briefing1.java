@@ -29,13 +29,13 @@ public class Part3Briefing1 extends AppCompatActivity {
                 "" +
                 "\n\t\t“But the fun is not over just yet, as I have another gift in which I assume you will be interested in.”\n" +
                 "\t\n\t\tThe mysterious man begins, “The location of a second bomb is in a house on Baker Street with five houses which look identical from the outside. If you pick the wrong one, I set off the bomb. If you try anything other than you are told, I set off the bomb. So, it is up to you, the city’s “best” detective to find the bomb.”\n" +
-                "\t\n\t\t“Here are some of the information I could tell you:\n" +
+                "\t\n\t\t“You may need some help with this one so here are some clues:\n" +
                 "\n1)\tEach house’s owner is of a different nationality, drinks a different beverage and smokes a different type of cigar\n" +
                 "\n2)\tEach house’s interior walls are painted a different color\n" +
                 "\n3)\tEach house contains a different animal but one has the object you are looking for”\n" +
                 "\n\t\t“There should be a list of more clues to help you find the house, underneath the cushion of your seat, this one is a long one so you should get started. And oh, do me a favor and bring the Deerstalker with you!” concluded the voice, and the dial tone began once again. You grab the sheet containing more information and rush to Baker Street.\n";
 
-        String briefingString = String.format("%s %s %s", briefing1, user.getUserLastName(), briefing2);
+        String briefingString = String.format("%s%s%s", briefing1, user.getUserLastName(), briefing2);
         TextView briefing = (TextView)findViewById(R.id.textView1);
 
         briefing.setText(briefingString);

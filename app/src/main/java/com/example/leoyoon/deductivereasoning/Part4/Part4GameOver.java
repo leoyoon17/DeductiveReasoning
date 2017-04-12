@@ -1,4 +1,4 @@
-package com.example.leoyoon.deductivereasoning.Part3;
+package com.example.leoyoon.deductivereasoning.Part4;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.leoyoon.deductivereasoning.Misc.User;
 import com.example.leoyoon.deductivereasoning.R;
 
-public class Part3GameOver extends AppCompatActivity {
+public class Part4GameOver extends AppCompatActivity {
 
     private User user;
 
@@ -23,13 +23,13 @@ public class Part3GameOver extends AppCompatActivity {
     }
 
     public void back (View view) {
-        Intent intent = new Intent(Part3GameOver.this, Part3.class);
+        Intent intent = new Intent(Part4GameOver.this, Part4.class);
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("user", user);
         intent.putExtras(bundle);
 
-        Part3GameOver.this.startActivity(intent);
+        Part4GameOver.this.startActivity(intent);
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }

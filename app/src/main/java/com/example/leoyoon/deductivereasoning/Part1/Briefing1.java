@@ -24,12 +24,12 @@ public class Briefing1 extends AppCompatActivity {
         user = (User)bundle.getSerializable("user");
 
 
-        String briefing1 = getResources().getString(R.string.briefing1);
+        String briefing1 = "Good evening Agent ";
         String briefing1_2 = ", we have a new case that needs your expertise. At approximately 0400 hours, the British National Museum’s anti burglary alarm system went off. The only object that was reported as altered by the museum’s security teams was the Deerstalker cap formerly worm by the legendary detective, Sherlock Holmes. The bureau is unaware of the motives behind this act of vandalism as Holmes fell down Reichenbach Falls along with his nemesis, James Moriarty – although, their bodies were never found at the site of the incident. Through further inspection, we found a note underneath the cap stating,\n" +
                 "\n \t \t \t “The Game is Afoot” \n\n" +
                 "\tWe managed to gather four witnesses who claim that they may have something of use for this investigation. Your job is to gather clues and bring us one step closer to solving this mystery.";
 
-        String briefingString = String.format("%s %s %s",briefing1, user.getUserLastName(), briefing1_2);
+        String briefingString = String.format("%s%s%s",briefing1, user.getUserLastName(), briefing1_2);
 
         TextView briefing = (TextView)findViewById(R.id.briefingView1);
         briefing.setText(briefingString);

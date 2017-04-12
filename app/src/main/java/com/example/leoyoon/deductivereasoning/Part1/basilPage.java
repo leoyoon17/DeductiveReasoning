@@ -20,7 +20,7 @@ public class basilPage extends AppCompatActivity {
                 " one of the museum's floorboards. It directed me to a piece of paper which" +
                 " had a series of stick figures on it... \n" +
                 "\tMaybe I should inform security about" +
-                " a possible rodent problem that they might have on their hand?... \n" +
+                " a possible rodent infestation that they might have on their hands?... \n" +
                 "\tNevermind, " +
                 "back to the assignment.";
 

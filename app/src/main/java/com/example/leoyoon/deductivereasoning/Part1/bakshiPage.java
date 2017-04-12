@@ -14,7 +14,7 @@ public class bakshiPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bakshi_page);
 
-        String statement = "\t Bakshi states that he was enjoying a peaceful day in Calcutta only to have a messenger boy drop off an envelope. He states that the contents of the envelope consisted of an invitation to the gala at the museum and a piece of paper which" +
+        String statement = "\t Bakshi states that he was enjoying a peaceful day in Calcutta only to have a messenger boy drop off an envelope. He states that the contents of the envelope consisted of an invitation to the gala at the museum and a piece of paper which " +
                 "consisted of a bunch of stick figures... \n" +
                 "\tThere were no signs of who sent the letter. You can view the document with the stick figures in the 'Clues' section.";
 
